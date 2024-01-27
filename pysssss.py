@@ -154,7 +154,7 @@ def install_js():
 
 
 def should_install_js():
-    return not hasattr(PromptServer.instance, "supports") or "custom_nodes_from_web" not in PromptServer.instance.supports
+    return False #not hasattr(PromptServer.instance, "supports") or "custom_nodes_from_web" not in PromptServer.instance.supports
 
 
 def init(check_imports=None):
